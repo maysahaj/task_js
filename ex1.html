@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+num1= <input type="number" id="firstnumber"></br>
+
+ num2 = <input type="number" id = "2nd number">
+ <p id="firstnumber"></p>
+  <p id="2nd number"></p>
+
+
+
+ <button onclick="divide()">divide</button>
+  <button onclick="multiply()">multiply</button>
+
+ <h2> the result is</h2>
+<br>
+ <span id = "result"></span>
+
+
+
+<script>
+	var num1 = document.getElementById("firstnumber");
+ var num2 = document.getElementById("2nd number");
+
+
+function divide(){
+	var a = num1.value / num2.value;
+
+
+ document.getElementById("result").innerHTML = a  ;
+}
+function multiply(){
+	b= num1.value * num2.value;
+ document.getElementById("result").innerHTML =b  ;
+}
+
+</script>
+</body>
+</html> 
